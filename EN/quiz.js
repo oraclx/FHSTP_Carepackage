@@ -1,6 +1,7 @@
-const questions = document.querySelectorAll('.question');
-let currentQuestion = 0;
+const quizContainer = document.getElementById('quiz');
 let score = 0;
+let currentQuestion = 0;
+let questions = [];
 
 // Load JSON
 fetch(quizFile)
