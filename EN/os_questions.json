@@ -1,0 +1,36 @@
+[
+    {
+        "question": "What is 2 + 2?",
+        "options": {
+            "a": "3",
+            "b": "4",
+            "c": "5"
+        },
+        "answer": "b",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following are programming languages?",
+        "options": {
+            "a": "Python",
+            "b": "HTML",
+            "c": "JavaScript",
+            "d": "CSS"
+        },
+        "answer": [
+            "a",
+            "c"
+        ],
+        "multiple": true
+    },
+    {
+        "question": "Capital of France?",
+        "options": {
+            "a": "Berlin",
+            "b": "Madrid",
+            "c": "Paris"
+        },
+        "answer": "c",
+        "multiple": false
+    }
+]

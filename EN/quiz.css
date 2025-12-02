@@ -1,0 +1,23 @@
+body {
+    width: 80%;
+    margin: auto;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+    font-family: 'Alexandria';
+}
+
+.quiz-container {
+    margin-top: 3em;
+    background: var(--secondary-color);
+    padding: 2em 3em;
+    border-radius: 1em;
+    box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.5);
+}
+
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
