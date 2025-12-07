@@ -425,7 +425,7 @@
             btn.insertAdjacentElement('afterend', resultText);
 
             btn.addEventListener('click', () => {
-                const checkboxes = element.querySelectorAll('input[type="checkbox"]');
+                const checkboxes = element.querySelectorAll('input');
                 let selected = [];
                 checkboxes.forEach(box => {
                     if (box.checked) {

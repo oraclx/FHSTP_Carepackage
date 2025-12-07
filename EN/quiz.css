@@ -45,3 +45,15 @@ button {
 button:hover {
     transform: scale(1.05);
 }
+
+.question-group {
+    margin-bottom: 2em;
+}
+
+input {
+    font-family: 'Alexandria';
+}
+
+option {
+    font-family: 'Alexandria';
+}
