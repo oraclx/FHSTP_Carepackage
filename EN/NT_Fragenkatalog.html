@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USTP Carepackage</title>
+    <link rel="stylesheet" href="FHSTP_Carepackage/styles.css">
+    <link rel="stylesheet" href="FHSTP_Carepackage/EN/quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="site-title" href="../index.html">USTP Carepackage</a>
+        <!--<nav>
+                <a href="index.html">1. Semester</a>
+                <a href="index.html">2. Semester</a>
+                <a href="index.html">3. Semester</a>
+                <a href="index.html">4. Semester</a>
+                <a href="index.html">5. Semester</a>
+                <a href="index.html">6. Semester</a>
+            </nav>-->
+    </header>
+
+    <h1>Netzwerktechnik:</h1>
+
+    <h2>1. IPv4-Unicast-Bereiche</h2>
+    <h3>Frage (W/F): IPv4-Unicast-Adressen beginnen im ersten Oktett immer zwischen 1–223.</h3>
+    <input type="checkbox"> Wahr<br>
+    <input type="checkbox"> Falsch<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Falsch. <br> Korrekt: 1–223, aber 127.x.x.x ist Loopback; 0.x.x.x reserviert; 224–239 Multicast;
+        240–255
+        reserviert.
+    </details>
+
+    <h2>2. IP vs. MAC</h2>
+    <h3>Frage (W/F): „IP-Adressen sind physische Adressen, MAC-Adressen logische.“</h3>
+    <input type="checkbox"> Wahr<br>
+    <input type="checkbox"> Falsch<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Falsch. IP = logisch (Layer 3), MAC = physisch/Link-Layer (Layer 2).
+    </details>
+
+    <h2>3. Eigenschaften von IPv4</h2>
+    <h3>Frage (MC, Mehrfachauswahl): Welche Aussagen treffen zu?</h3>
+    <input type="checkbox"> IPv4-Adressen bestehen aus 32 Bits.<br>
+    <input type="checkbox"> IPv4-Adressen werden immer in Dezimalnotation angegeben.<br>
+    <input type="checkbox"> IPv4-Adressen werden immer in Hexadezimalnotation angegeben.<br>
+    <input type="checkbox"> IPv4-Adressen bestehen aus 128 Bits.<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: IPv4-Adressen bestehen aus 32 Bits.
+    </details>
+
+    <h2>4. Loopback-Adressen</h2>
+    <h3>Frage (MC, Mehrfachauswahl): Welche sind gültige Loopback-Adressen?</h3>
+    <input type="checkbox"> <code>0.0.0.0</code><br>
+    <input type="checkbox"> <code>::1</code><br>
+    <input type="checkbox"> <code>192.168.0.1</code><br>
+    <input type="checkbox"> <code>::</code><br>
+    <input type="checkbox"> <code>127.0.0.1</code><br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: <code>::1</code>, <code>127.0.0.1</code>
+    </details>
+
+    <h2>5. Klasse-C-Hostanzahl</h2>
+    <h3>Frage (W/F): „In einem Klasse-C-Netz können maximal 154 Hostadressen bereitgestellt werden.“</h3>
+    <input type="checkbox"> Wahr<br>
+    <input type="checkbox"> Falsch<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Falsch. Maximal 254 Hosts (256 minus Netz- und Broadcastadresse).
+    </details>
+
+    <h2>6. Well-Known Ports zuordnen</h2>
+
+    <h3>Frage (Zuordnung): Ordnen Sie die Serverportnummern zu.</h3>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>FTP:</td>
+            <td>
+                <select>
+                    <option selected></option>
+                    <option>21</option>
+                    <option>53</option>
+                    <option>80</option>
+                    <option>443</option>
+                    <option>25</option>
+                    <option>110</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>DNS:</td>
+            <td>
+                <select>
+                    <option selected></option>
+                    <option>21</option>
+                    <option>53</option>
+                    <option>80</option>
+                    <option>443</option>
+                    <option>25</option>
+                    <option>110</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>HTTP:</td>
+            <td>
+                <select>
+                    <option selected></option>
+                    <option>21</option>
+                    <option>53</option>
+                    <option>80</option>
+                    <option>443</option>
+                    <option>25</option>
+                    <option>110</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>HTTPS:</td>
+            <td>
+                <select>
+                    <option selected></option>
+                    <option>21</option>
+                    <option>53</option>
+                    <option>80</option>
+                    <option>443</option>
+                    <option>25</option>
+                    <option>110</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>SMTP:</td>
+            <td>
+                <select>
+                    <option selected></option>
+                    <option>21</option>
+                    <option>53</option>
+                    <option>80</option>
+                    <option>443</option>
+                    <option>25</option>
+                    <option>110</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>POP3:</td>
+            <td>
+                <select>
+                    <option selected></option>
+                    <option>21</option>
+                    <option>53</option>
+                    <option>80</option>
+                    <option>443</option>
+                    <option>25</option>
+                    <option>110</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: <br>
+        - FTP 21,<br>
+        - DNS 53,<br>
+        - HTTP 80,<br>
+        - HTTPS 443,<br>
+        - SMTP 25,<br>
+        - POP3 110.
+    </details>
+
+    <h2>7. Private IPv4-Adressen</h2>
+    <h3>Frage (MC, Mehrfachauswahl): Welche gelten als private Adressen?</h3>
+    <input type="checkbox"> <code>198.1.1.1</code><br>
+    <input type="checkbox"> <code>10.255.255.254</code><br>
+    <input type="checkbox"> <code>172.16.0.1</code><br>
+    <input type="checkbox"> <code>172.15.1.1</code><br>
+    <input type="checkbox"> <code>172.32.0.1</code><br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: <code>10.255.255.254</code>, <code>172.16.0.1</code>
+    </details>
+
+    <h2>8. Klasse der Adresse 190.6.255.254</h2>
+    <h3>Frage (W/F): „Die IP-Adresse 190.6.255.254 gehört in Netzwerkklasse B.“</h3>
+    <input type="checkbox"> Wahr<br>
+    <input type="checkbox"> Falsch<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Wahr. (128–191 = Klasse B)
+    </details>
+
+    <h2>9. Nicht-private nach RFC1918</h2>
+    <h3>Frage (MC, Mehrfachauswahl): Welche sind keine privaten Adressen?</h3>
+    <input type="checkbox"> <code>172.31.1.1</code><br>
+    <input type="checkbox"> <code>10.255.1.1</code><br>
+    <input type="checkbox"> <code>172.33.1.1</code><br>
+    <input type="checkbox"> <code>191.168.1.1</code><br>
+    <input type="checkbox"> <code>10.1.255.1</code><br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: <code>172.33.1.1</code>, <code>191.168.1.1</code>
+    </details>
+
+    <h2>10. Broadcast-MAC</h2>
+    <h3>Frage (W/F): „ff:ff:ff:ff:ff:ff ist eine korrekte MAC-Adresse.“</h3>
+    <input type="checkbox"> Wahr<br>
+    <input type="checkbox"> Falsch<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Wahr. (Layer-2-Broadcast)
+    </details>
+
+    <h2>11. Router-Entscheidung (allgemein)</h2>
+    <h3>Frage (Kurzantwort): Welche Adresse nutzt ein Router typischerweise für seine Weiterleitungsentscheidung?</h3>
+
+    <input type="text" value="Text hier" style="width: 100%;"><br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Ziel-IP-Adresse (Destination IP).
+    </details>
+
+    <h2>12. Router-Entscheidung (MC-Variante)</h2>
+    <h3>Frage (MC): a) Empfänger-MAC- und Empfänger-IP-Adresse</h3>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: a = falsch. Router betrachten die Ziel-IP, nicht die MAC-Adresse (Layer-3-Routing).
+    </details>
+
+    <h2>13. Klasse der Adresse 120.6.255.254</h2>
+    <h3>Frage (W/F): … gehört in Klasse B.</h3>
+    <input type="checkbox"> Wahr<br>
+    <input type="checkbox"> Falsch<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Falsch. Klasse A (1–126).
+    </details>
+
+    <h2>14. Standard-Gateway notwendig?</h2>
+    <h3>Frage (W/F): Ein Standard-Gateway ist nicht notwendig, um andere logische Netze zu erreichen.</h3>
+    <input type="checkbox"> Wahr<br>
+    <input type="checkbox"> Falsch<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Falsch. (Alternativ ginge eine passende statische Route; ohne irgendeine Route geht es nicht.)
+    </details>
+
+    <h2>15. Skalierbare Topologie</h2>
+    <h3>Frage (MC, Einfachauswahl):</h3>
+    <input type="checkbox"> Ring<br>
+    <input type="checkbox"> Maschen<br>
+    <input type="checkbox"> Stern<br>
+    <input type="checkbox"> Bus<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Stern. (Einfach erweiterbar; Voll-Mesh skaliert schlecht wegen vieler Verbindungen.)
+    </details>
+
+    <h2>16. LAN-Technologien</h2>
+    <h3>Frage (MC, Mehrfachauswahl):</h3>
+    <input type="checkbox"> ADSL<br>
+    <input type="checkbox"> LTE<br>
+    <input type="checkbox"> WLAN<br>
+    <input type="checkbox"> Ethernet<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: WLAN, Ethernet.
+    </details>
+
+    <h2>17. Aussagen über Router</h2>
+    <h3>Frage (MC, Mehrfachauswahl):</h3>
+    <input type="checkbox"> Router sind OSI-Layer-4-Geräte.<br>
+    <input type="checkbox"> Weiterleitung per IP-basierter Routingtabelle.<br>
+    <input type="checkbox"> Wege dynamisch (Routingprotokolle) oder statisch erlernbar.<br>
+    <input type="checkbox"> Broadcasts werden nur mit IP-Helper/Relay weitergeleitet.<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Weiterleitung per IP-basierter Routingtabelle, Wege dynamisch (Routingprotokolle) oder statisch
+        erlernbar, Broadcasts werden nur mit IP-Helper/Relay weitergeleitet
+    </details>
+
+    <h2>18. Gültige Hostadressen (klassenbasiert)</h2>
+    <h3>Frage (MC, Mehrfachauswahl):</h3>
+
+    <input type="checkbox"> <code>11.1.222.0</code><br>
+    <input type="checkbox"> <code>192.167.0.1</code><br>
+    <input type="checkbox"> <code>198.121.255.254</code><br>
+    <input type="checkbox"> <code>22.255.255.255</code><br>
+    <input type="checkbox"> <code>127.0.0.1</code><br>
+    <input type="checkbox"> <code>192.168.0.255</code><br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: <code>192.167.0.1</code>, <code>198.121.255.254</code>.
+    </details>
+
+    <h2>19. Maximale TP-Segmentlänge (IEEE)</h2>
+    <h3>Frage (MC):</h3>
+    <input type="checkbox"> 500 m<br>
+    <input type="checkbox"> 2000 m<br>
+    <input type="checkbox"> 100 m<br>
+    <input type="checkbox"> 1000 m<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: 100 m (z. B. 10/100/1000BASE-T).
+    </details>
+
+    <h2>20. IPv6-Kurzschreibweise</h2>
+    <h3>Frage (MC): Kürzeste gültige Abkürzung für FE80:0000:0000:0100:0000:0000:0000:0123</h3>
+
+    <input type="checkbox"> <code>FE80::100:0:0:0:123:4567</code><br>
+    <input type="checkbox"> <code>FE80:0:0:100::123</code><br>
+    <input type="checkbox"> <code>FE80::100::123</code><br>
+    <input type="checkbox"> <code>FE8::1::123</code><br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: <code>FE80:0:0:100::123</code>
+    </details>
+
+    <h2>21. Switch & Netze</h2>
+    <h3>Frage (W/F): „Switches leiten aufgrund ihrer MAC-Tabellen grundsätzlich zwischen verschiedenen logischen Netzen
+        zu.“
+    </h3>
+
+    <input type="checkbox"> Wahr<br>
+    <input type="checkbox"> Falsch<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Falsch. (Layer-2; Routing macht Layer-3.)
+    </details>
+
+    <h2>22. Physikalische Bus-Topologie heute?</h2>
+    <h3>Frage (W/F): „Heutige Ethernet-Netze sind üblicherweise physikalische Busse.“</h3>
+
+    <input type="checkbox"> Wahr<br>
+    <input type="checkbox"> Falsch<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Falsch. (Heute i. d. R. Stern um Switches.)
+    </details>
+
+    <h2>23. Klasse-A-Beginn</h2>
+    <h3>Frage (W/F): „Klasse-A-Adressen beginnen im ersten Oktett zwischen 1–127.“</h3>
+
+    <input type="checkbox"> Wahr<br>
+    <input type="checkbox"> Falsch<br>
+
+    <details>
+        <summary>Antwort</summary>
+        Antwort: Falsch. Übliche (nutzbare) Klasse-A-Netze beginnen 1–126; 127/8 ist Loopback reserviert.
+    </details>
+</body>
+
+</html>

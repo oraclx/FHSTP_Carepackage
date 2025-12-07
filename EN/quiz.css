@@ -21,3 +21,8 @@ body {
 .question.active {
     display: block;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
