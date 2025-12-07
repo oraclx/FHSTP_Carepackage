@@ -26,3 +26,22 @@ ul {
     list-style-type: none;
     padding: 0;
 }
+
+details {
+    background: var(--main-bg-color);
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
+
+button {
+    font-family: 'Alexandria';
+    border-radius: 0.3em;
+    border: none;
+    background-color: var(--main-font-color);
+    filter: drop-shadow(0.15em 0.15em 0.2em);
+    transition: transform .5s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}

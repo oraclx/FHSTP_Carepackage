@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USTP Carepackage</title>
-    <link rel="stylesheet" href="FHSTP_Carepackage/styles.css">
-    <link rel="stylesheet" href="FHSTP_Carepackage/EN/quiz.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../EN/quiz.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria&family=Roboto&display=swap" rel="stylesheet">
@@ -15,297 +15,443 @@
 <body>
     <header>
         <a class="site-title" href="../index.html">USTP Carepackage</a>
-        <!--<nav>
-                <a href="index.html">1. Semester</a>
-                <a href="index.html">2. Semester</a>
-                <a href="index.html">3. Semester</a>
-                <a href="index.html">4. Semester</a>
-                <a href="index.html">5. Semester</a>
-                <a href="index.html">6. Semester</a>
-            </nav>-->
     </header>
 
     <h1>Betriebssysteme Fragenkatalog</h1>
 
-    <h3>Frage: Welche Begriffe stellen Dateisysteme unter Linux dar?</h3>
-    <input type="checkbox"> TCP/IP<br>
-    <input type="checkbox"> FAT32<br>
-    <input type="checkbox"> CMD<br>
-    <input type="checkbox"> Ext4<br>
-    <input type="checkbox"> NTFS<br>
-    <input type="checkbox"> Reise4<br>
+    <!-- Question 1 -->
+    <div class="question-group" data-correct="FAT32,Ext4,NTFS">
+        <h3>Frage: Welche Begriffe stellen Dateisysteme unter Linux dar?</h3>
+        <label><input type="checkbox" name="q1" value="TCP/IP"> TCP/IP</label><br>
+        <label><input type="checkbox" name="q1" value="FAT32"> FAT32</label><br>
+        <label><input type="checkbox" name="q1" value="CMD"> CMD</label><br>
+        <label><input type="checkbox" name="q1" value="Ext4"> Ext4</label><br>
+        <label><input type="checkbox" name="q1" value="NTFS"> NTFS</label><br>
+        <label><input type="checkbox" name="q1" value="Reise4"> Reise4</label><br>
+        <details>
+            <summary>Antwort</summary>
+            FAT32, Ext4, NTFS, (Reise4 nein, Reiser4 ja)
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 2 -->
+    <div class="question-group"
+        data-correct="IPv4 Adressen können manuell am Computer eingegeben werden,Beim Festlegen einer IPv4 Adresse muss verpflichtend eine Subnetzmaske bestimmt werden">
+        <h3>Frage: Welche Aussagen zu TCP/IP Version 4 sind richtig?</h3>
+        <label><input type="checkbox" name="q2" value="IPv4 Adressen können manuell am Computer eingegeben werden"> IPv4
+            Adressen können manuell am Computer eingegeben werden</label><br>
+        <label><input type="checkbox" name="q2" value="IPv4 wird in Hexadezimalnotation angegeben"> IPv4 wird in
+            Hexadezimalnotation angegeben</label><br>
+        <label><input type="checkbox" name="q2"
+                value="Beim Festlegen einer IPv4 Adresse muss verpflichtend eine Subnetzmaske bestimmt werden"> Beim
+            Festlegen einer IPv4 Adresse muss verpflichtend eine Subnetzmaske bestimmt werden</label><br>
+        <label><input type="checkbox" name="q2" value="Die Anzahl verfügbarer Adressen ist bei IPv4 höher als bei IPv6">
+            Die Anzahl verfügbarer Adressen ist bei IPv4 höher als bei IPv6</label><br>
+        <details>
+            <summary>Antwort</summary>
+            IPv4 Adressen können manuell am Computer eingegeben werden, Beim Festlegen einer IPv4 Adresse muss
+            verpflichtend eine Subnetzmaske bestimmt werden
+        </details>
+    </div>
 
-    <h3>Frage: Welche Aussagen zu TCP/IP Version 4 sind richtig?</h3>
+    <!-- Question 3 -->
+    <div class="question-group" data-correct="/etc/group,/etc/gshadow">
+        <h3>Frage: Welche Dateien enthalten unter Linux Gruppen-Informationen?</h3>
+        <label><input type="checkbox" name="q3" value="/etc/passwd"> /etc/passwd</label><br>
+        <label><input type="checkbox" name="q3" value="/etc/group"> /etc/group</label><br>
+        <label><input type="checkbox" name="q3" value="/etc/shadow"> /etc/shadow</label><br>
+        <label><input type="checkbox" name="q3" value="/etc/gshadow"> /etc/gshadow</label><br>
+        <details>
+            <summary>Antwort</summary>
+            /etc/group, /etc/gshadow
+        </details>
+    </div>
 
-    <input type="checkbox"> IPv4 Adressen können manuell am Computer eingegeben werden<br>
-    <input type="checkbox"> IPv4 wird in Hexadezimalnotation angegeben<br>
-    <input type="checkbox"> Beim Festlegen einer IPv4 Adresse muss verpflichtend eine Subnetzmaske bestimmt werden<br>
-    <input type="checkbox"> Die Anzahl verfügbarer Adressen ist bei IPv4 höher als bei IPv6<br>
+    <!-- Question 4 -->
+    <div class="question-group"
+        data-correct="ermöglicht Zugriffe auf Netzwerkfreigaben mit dem SMB-Protokoll,freie Software-Suite">
+        <h3>Frage: Welche Aussagen zu SAMBA sind richtig?</h3>
+        <label><input type="checkbox" name="q4" value="ermöglicht Zugriffe auf Netzwerkfreigaben mit dem SMB-Protokoll">
+            ermöglicht Zugriffe auf Netzwerkfreigaben mit dem SMB-Protokoll</label><br>
+        <label><input type="checkbox" name="q4" value="kommerzielle Software-Suite"> kommerzielle
+            Software-Suite</label><br>
+        <label><input type="checkbox" name="q4" value="freie Software-Suite"> freie Software-Suite</label><br>
+        <label><input type="checkbox" name="q4" value="ermöglicht Zugriffe auf Netzwerkfreigaben mit dem NFS-Protokoll">
+            ermöglicht Zugriffe auf Netzwerkfreigaben mit dem NFS-Protokoll</label><br>
+        <details>
+            <summary>Antwort</summary>
+            ermöglicht Zugriffe auf Netzwerkfreigaben mit dem SMB-Protokoll, freie Software-Suite
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 5 -->
+    <div class="question-group" data-correct="Lesen,Schreiben,Vollzugriff,Ändern">
+        <h3>Frage: Welche Rechte können auf Freigaben in Windows Systemen gesetzt werden?</h3>
+        <label><input type="checkbox" name="q5" value="Lesen"> Lesen</label><br>
+        <label><input type="checkbox" name="q5" value="Schreiben"> Schreiben</label><br>
+        <label><input type="checkbox" name="q5" value="Vollzugriff"> Vollzugriff</label><br>
+        <label><input type="checkbox" name="q5" value="Ändern"> Ändern</label><br>
+        <details>
+            <summary>Antwort</summary>
+            Lesen, Schreiben, Vollzugriff, Ändern
+        </details>
+    </div>
 
-    <h3>Frage: Welche Dateien enthalten unter Linux Gruppen-Informationen?</h3>
-    <input type="checkbox"> /etc/passwd<br>
-    <input type="checkbox"> /etc/group<br>
-    <input type="checkbox"> /etc/shadow<br>
-    <input type="checkbox"> /etc/gshadow<br>
+    <!-- Question 6 -->
+    <div class="question-group" data-correct="ifconfig,ip">
+        <h3>Frage: Welcher der folgenden Befehle zeigt die IP-Adresskonfiguration auf einem Linux-System an?</h3>
+        <label><input type="checkbox" name="q6" value="ping"> ping</label><br>
+        <label><input type="checkbox" name="q6" value="ipconfig"> ipconfig</label><br>
+        <label><input type="checkbox" name="q6" value="ifconfig"> ifconfig</label><br>
+        <label><input type="checkbox" name="q6" value="ip"> ip</label><br>
+        <label><input type="checkbox" name="q6" value="traceroute"> traceroute</label><br>
+        <details>
+            <summary>Antwort</summary>
+            ifconfig, ip
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 7 -->
+    <div class="question-group" data-correct="IP-Adresse des Zielcomputers,Freigabename">
+        <h3>Frage: Um Daten über das Netzwerk zugreifen zu können, werden folgende Informationen benötigt?</h3>
+        <label><input type="checkbox" name="q7" value="IP-Adresse des Zielcomputers"> IP-Adresse des
+            Zielcomputers</label><br>
+        <label><input type="checkbox" name="q7" value="IP-Adresse des Quellcomputers"> IP-Adresse des
+            Quellcomputers</label><br>
+        <label><input type="checkbox" name="q7" value="der genaue Speicherort im Dateisystem"> der genaue Speicherort im
+            Dateisystem</label><br>
+        <label><input type="checkbox" name="q7" value="Freigabename"> Freigabename</label><br>
+        <details>
+            <summary>Antwort</summary>
+            IP-Adresse des Zielcomputers, Freigabename
+        </details>
+    </div>
 
-    <h3>Frage: Welche Aussagen zu SAMBA sind richtig?</h3>
-    <input type="checkbox"> ermöglicht Zugriffe auf Netzwerkfreigaben mit dem SMB-Protokoll<br>
-    <input type="checkbox"> kommerzielle Software-Suite<br>
-    <input type="checkbox"> freie Software-Suite<br>
-    <input type="checkbox"> ermöglicht Zugriffe auf Netzwerkfreigaben mit dem NFS-Protokoll<br>
+    <!-- Question 8 -->
+    <div class="question-group" data-correct="pwd">
+        <h3>Frage: Der Befehl _____ zeigt bei Linux Betriebssystemen das aktuell genutzte Arbeitsverzeichnis an.</h3>
+        <label><input type="checkbox" name="q8" value="history"> history</label><br>
+        <label><input type="checkbox" name="q8" value="exec"> exec</label><br>
+        <label><input type="checkbox" name="q8" value="pwd"> pwd</label><br>
+        <label><input type="checkbox" name="q8" value="sudo"> sudo</label><br>
+        <label><input type="checkbox" name="q8" value="ls"> ls</label><br>
+        <details>
+            <summary>Antwort</summary>
+            pwd
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 9 -->
+    <div class="question-group" data-correct="Ping,Tracert">
+        <h3>Frage: Welche der folgenden Befehle können in einer Windows Eingabeaufforderung (CLI) ausgeführt werden?
+        </h3>
+        <label><input type="checkbox" name="q9" value="Ping"> Ping</label><br>
+        <label><input type="checkbox" name="q9" value="ifconfig"> ifconfig</label><br>
+        <label><input type="checkbox" name="q9" value="Tracert"> Tracert</label><br>
+        <label><input type="checkbox" name="q9" value="pwd"> pwd</label><br>
+        <details>
+            <summary>Antwort</summary>
+            Ping, Tracert
+        </details>
+    </div>
 
-    <h3>Frage: Welche Rechte können auf Freigaben in Windows Systemen gesetzt werden?</h3>
-    <input type="checkbox"> Lesen<br>
-    <input type="checkbox"> Schreiben<br>
-    <input type="checkbox"> Vollzugriff<br>
-    <input type="checkbox"> Ändern<br>
+    <!-- Question 10 -->
+    <div class="question-group" data-correct=".exe">
+        <h3>Frage: Welche Dateierweiterung steht üblicherweise für ausführbare Programmdateien?</h3>
+        <label><input type="checkbox" name="q10" value=".pdf"> .pdf</label><br>
+        <label><input type="checkbox" name="q10" value=".docx"> .docx</label><br>
+        <label><input type="checkbox" name="q10" value=".ppt"> .ppt</label><br>
+        <label><input type="checkbox" name="q10" value=".exe"> .exe</label><br>
+        <label><input type="checkbox" name="q10" value=".xls"> .xls</label><br>
+        <details>
+            <summary>Antwort</summary>
+            .exe
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 11 -->
+    <div class="question-group" data-correct="Aufteilung einer Festplatte auf einzelne Abschnitte">
+        <h3>Frage: Was versteht man unter Partitionierung?</h3>
+        <label><input type="checkbox" name="q11" value="Verzeichnisdienst bereitstellen"> Verzeichnisdienst
+            bereitstellen</label><br>
+        <label><input type="checkbox" name="q11" value="Namensauflösung in Netzwerken"> Namensauflösung in
+            Netzwerken</label><br>
+        <label><input type="checkbox" name="q11" value="Aufteilung einer Festplatte auf einzelne Abschnitte"> Aufteilung
+            einer
+            Festplatte auf einzelne Abschnitte</label><br>
+        <label><input type="checkbox" name="q11" value="Zuweisung einer IP-Adresse"> Zuweisung einer
+            IP-Adresse</label><br>
+        <details>
+            <summary>Antwort</summary>
+            Aufteilung einer Festplatte auf einzelne Abschnitte
+        </details>
+    </div>
 
-    <h3>Frage: Welcher der folgenden Befehle zeigt die IP-Adresskonfiguration auf einem Linux-System an?</h3>
-    <input type="checkbox"> ping<br>
-    <input type="checkbox"> ipconfig<br>
-    <input type="checkbox"> ifconfig<br>
-    <input type="checkbox"> ip<br>
-    <input type="checkbox"> traceroute<br>
+    <!-- Question 12 -->
+    <div class="question-group" data-correct="Apache,Nginx,Internet Information Server (IIS)">
+        <h3>Frage: Welche der folgenden Begriffe stehen NICHT für Webserver?</h3>
+        <label><input type="checkbox" name="q12" value="SMB"> SMB</label><br>
+        <label><input type="checkbox" name="q12" value="Apache"> Apache</label><br>
+        <label><input type="checkbox" name="q12" value="Nginx"> Nginx</label><br>
+        <label><input type="checkbox" name="q12" value="Ubuntu Desktop"> Ubuntu Desktop</label><br>
+        <label><input type="checkbox" name="q12" value="Internet Information Server (IIS)"> Internet Information Server
+            (IIS)</label><br>
+        <details>
+            <summary>Antwort</summary>
+            Apache, Nginx, Internet Information Server (IIS)
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 13 -->
+    <div class="question-group" data-correct="Wahr">
+        <h3>Frage: Mit dem Befehl »mv« können Sie unter Linux Systemen Dateien verschieben oder auch umbenennen.</h3>
+        <label><input type="checkbox" name="q13" value="Wahr"> Wahr</label><br>
+        <label><input type="checkbox" name="q13" value="Falsch"> Falsch</label><br>
+        <details>
+            <summary>Antwort</summary>
+            Wahr
+        </details>
+    </div>
 
-    <h3>Frage: Um Daten über das Netzwerk zugreifen zu können, werden folgende Informationen benötigt?</h3>
-    <input type="checkbox"> IP-Adresse des Zielcomputers<br>
-    <input type="checkbox"> IP-Adresse des Quellcomputers<br>
-    <input type="checkbox"> der genaue Speicherort im Dateisystem<br>
-    <input type="checkbox"> Freigabename<br>
+    <!-- Question 14 -->
+    <div class="question-group" data-correct="Falsch">
+        <h3>Frage: Das Fragezeichen (?) wird verwendet, um null oder mehr Zeichen in einem Dateinamen darzustellen.</h3>
+        <label><input type="checkbox" name="q14" value="Wahr"> Wahr</label><br>
+        <label><input type="checkbox" name="q14" value="Falsch"> Falsch</label><br>
+        <details>
+            <summary>Antwort</summary>
+            Falsch
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 15 -->
+    <div class="question-group" data-correct="Wahr">
+        <h3>Frage: Damit eine Freigabe im Netzwerk nicht ersichtlich ist, muss nach dem Freigabenamen ein $-Zeichen
+            (Dollarzeichen) angegeben werden.</h3>
+        <label><input type="checkbox" name="q15" value="Wahr"> Wahr</label><br>
+        <label><input type="checkbox" name="q15" value="Falsch"> Falsch</label><br>
+        <details>
+            <summary>Antwort</summary>
+            Wahr
+        </details>
+    </div>
 
-    <h3>Frage: Der Befehl _____ zeigt bei Linux Betriebssystemen das aktuell genutzte Arbeitsverzeichnis an.</h3>
-    <input type="checkbox"> history<br>
-    <input type="checkbox"> exec<br>
-    <input type="checkbox"> pwd<br>
-    <input type="checkbox"> sudo<br>
-    <input type="checkbox"> ls<br>
+    <!-- Question 16 -->
+    <div class="question-group" data-correct="80,443">
+        <h3>Frage: Welche Portnummer wird für HTTP verwendet? (bitte nur die Zahl eingeben)</h3>
+        <p>http: 80<br>https: 443</p>
+        <details>
+            <summary>Antwort</summary>
+            80, 443
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 17 -->
+    <div class="question-group" data-correct="EFI,GPT">
+        <h3>Frage: Welche der folgenden Arten sind KEINE gültigen Partitionierungsstile?</h3>
+        <label><input type="checkbox" name="q17" value="MBR"> MBR</label><br>
+        <label><input type="checkbox" name="q17" value="EFI"> EFI</label><br>
+        <label><input type="checkbox" name="q17" value="BIOS"> BIOS</label><br>
+        <label><input type="checkbox" name="q17" value="GPT"> GPT</label><br>
+        <details>
+            <summary>Antwort</summary>
+            EFI, GPT
+        </details>
+    </div>
 
-    <h3>Frage: Welche der folgenden Befehle können in einer Windows Eingabeaufforderung (CLI) ausgeführt werden?</h3>
-    <input type="checkbox"> Ping<br>
-    <input type="checkbox"> ifconfig<br>
-    <input type="checkbox"> Tracert<br>
-    <input type="checkbox"> pwd<br>
+    <!-- Question 18 -->
+    <div class="question-group" data-correct=".bat">
+        <h3>Frage: Mit welcher Dateierweiterung (Dateityp) werden Skriptdateien unter Windows Betriebssystemen
+            abgespeichert?</h3>
+        <label><input type="checkbox" name="q18" value=".bat"> .bat</label><br>
+        <label><input type="checkbox" name="q18" value=".docx"> .docx</label><br>
+        <label><input type="checkbox" name="q18" value=".sh"> .sh</label><br>
+        <label><input type="checkbox" name="q18" value=".xms"> .xms</label><br>
+        <label><input type="checkbox" name="q18" value=".xls"> .xls</label><br>
+        <details>
+            <summary>Antwort</summary>
+            .bat
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 19 -->
+    <div class="question-group"
+        data-correct="Als Referenz auf das aktuelle Verzeichnis, in dem man sich gerade befindet">
+        <h3>Frage: Der Punkt (.) kann in Linux verwendet werden, um Folgendes darzustellen:</h3>
+        <label><input type="checkbox" name="q19" value="Das Verzeichnis über dem aktuellen Arbeitsverzeichnis"> Das
+            Verzeichnis
+            über dem aktuellen Arbeitsverzeichnis</label><br>
+        <label><input type="checkbox" name="q19" value="Zwei beliebige einzelne Zeichen"> Zwei beliebige einzelne
+            Zeichen</label><br>
+        <label><input type="checkbox" name="q19"
+                value="Als Referenz auf das aktuelle Verzeichnis, in dem man sich gerade befindet"> Als Referenz auf das
+            aktuelle Verzeichnis, in dem man sich gerade befindet</label><br>
+        <label><input type="checkbox" name="q19" value="Nichts; es hat keine besondere Bedeutung"> Nichts; es hat keine
+            besondere Bedeutung</label><br>
+        <details>
+            <summary>Antwort</summary>
+            Als Referenz auf das aktuelle Verzeichnis, in dem man sich gerade befindet
+        </details>
+    </div>
 
-    <h3>Frage: Welche Dateierweiterung steht üblicherweise für ausführbare Programmdateien?</h3>
-    <input type="checkbox"> .pdf<br>
-    <input type="checkbox"> .docx<br>
-    <input type="checkbox"> .ppt<br>
-    <input type="checkbox"> .exe<br>
-    <input type="checkbox"> .xls<br>
+    <!-- Question 20 -->
+    <div class="question-group"
+        data-correct="Gerechte Verteilung der Betriebsmittel wie Prozessor oder Arbeitsspeicher,Bereitstellung von Diensten">
+        <h3>Frage: Welche Aufgaben erfüllt ein Betriebssystem?</h3>
+        <label><input type="checkbox" name="q20"
+                value="Gerechte Verteilung der Betriebsmittel wie Prozessor oder Arbeitsspeicher"> Gerechte Verteilung
+            der
+            Betriebsmittel wie Prozessor oder Arbeitsspeicher</label><br>
+        <label><input type="checkbox" name="q20" value="Datenaustausch zwischen verschiedenen Rechnern"> Datenaustausch
+            zwischen verschiedenen Rechnern</label><br>
+        <label><input type="checkbox" name="q20" value="Bereitstellung von Diensten"> Bereitstellung von
+            Diensten</label><br>
+        <label><input type="checkbox" name="q20" value="Stellt eine grafische Oberfläche für Benutzer zur Verfügung">
+            Stellt
+            eine grafische Oberfläche für Benutzer zur Verfügung</label><br>
+        <details>
+            <summary>Antwort</summary>
+            Gerechte Verteilung der Betriebsmittel wie Prozessor oder Arbeitsspeicher, Bereitstellung von Diensten
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 21 -->
+    <div class="question-group" data-correct="Linux Mint,Ubuntu">
+        <h3>Frage: Welche Distributionen sind Ableitungen von Debian?</h3>
+        <label><input type="checkbox" name="q21" value="Fedora"> Fedora</label><br>
+        <label><input type="checkbox" name="q21" value="Linux Mint"> Linux Mint</label><br>
+        <label><input type="checkbox" name="q21" value="Slackware"> Slackware</label><br>
+        <label><input type="checkbox" name="q21" value="Ubuntu"> Ubuntu</label><br>
+        <label><input type="checkbox" name="q21" value="Cent OS"> Cent OS</label><br>
+        <details>
+            <summary>Antwort</summary>
+            Linux Mint, Ubuntu
+        </details>
+    </div>
 
-    <h3>Frage: Was versteht man unter Partitionierung?</h3>
-    <input type="checkbox"> Verzeichnisdienst bereitstellen<br>
-    <input type="checkbox"> Namensauflösung in Netzwerken<br>
-    <input type="checkbox"> Aufteilung einer Festplatte auf einzelne Abschnitte<br>
-    <input type="checkbox"> Zuweisung einer IP-Adresse<br>
+    <!-- Question 22 -->
+    <div class="question-group"
+        data-correct="Viele Benutzer können sich gleichzeitig mit einem eindeutigen Konto anmelden,Ressourcen werden von Benutzern gemeinsam genutzt,Benutzer können ihre Informationen vor anderen Benutzern schützen">
+        <h3>Frage: Welche der folgenden Eigenschaften hat ein Mehrbenutzer-Betriebssystem?</h3>
+        <label><input type="checkbox" name="q22"
+                value="Ein Administrator erhält eine dedizierte CPU (Prozessor) zugewiesen">
+            Ein Administrator erhält eine dedizierte CPU (Prozessor) zugewiesen</label><br>
+        <label><input type="checkbox" name="q22"
+                value="Viele Benutzer können sich gleichzeitig mit einem eindeutigen Konto anmelden"> Viele Benutzer
+            können
+            sich gleichzeitig mit einem eindeutigen Konto anmelden</label><br>
+        <label><input type="checkbox" name="q22" value="Jeder Benutzer kann sich nur einmal pro Tag anmelden"> Jeder
+            Benutzer
+            kann sich nur einmal pro Tag anmelden</label><br>
+        <label><input type="checkbox" name="q22" value="Ressourcen werden von Benutzern gemeinsam genutzt"> Ressourcen
+            werden
+            von Benutzern gemeinsam genutzt</label><br>
+        <label><input type="checkbox" name="q22"
+                value="Benutzer können ihre Informationen vor anderen Benutzern schützen">
+            Benutzer können ihre Informationen vor anderen Benutzern schützen</label><br>
+        <details>
+            <summary>Antwort</summary>
+            Viele Benutzer können sich gleichzeitig mit einem eindeutigen Konto anmelden, Ressourcen werden von
+            Benutzern
+            gemeinsam genutzt, Benutzer können ihre Informationen vor anderen Benutzern schützen
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 23 -->
+    <div class="question-group" data-correct="steht für 0 oder mehrere Zeichen">
+        <h3>Frage: Der * (Stern) wird unter Linux verwendet, um Folgendes darzustellen:</h3>
+        <label><input type="checkbox" name="q23" value="steht für genau 1 Zeichen"> steht für genau 1
+            Zeichen</label><br>
+        <label><input type="checkbox" name="q23" value="Nichts; es hat keine besondere Bedeutung"> Nichts; es hat keine
+            besondere Bedeutung</label><br>
+        <label><input type="checkbox" name="q23" value="Das Verzeichnis über dem aktuellen Arbeitsverzeichnis"> Das
+            Verzeichnis
+            über dem aktuellen Arbeitsverzeichnis</label><br>
+        <label><input type="checkbox" name="q23" value="steht für 0 oder mehrere Zeichen"> steht für 0 oder mehrere
+            Zeichen</label><br>
+        <details>
+            <summary>Antwort</summary>
+            steht für 0 oder mehrere Zeichen
+        </details>
+    </div>
 
-    <h3>Frage: Welche der folgenden Begriffe stehen NICHT für Webserver?</h3>
-    <input type="checkbox"> SMB<br>
-    <input type="checkbox"> Apache<br>
-    <input type="checkbox"> Nginx<br>
-    <input type="checkbox"> Ubuntu Desktop<br>
-    <input type="checkbox"> Internet Information Server (IIS)<br>
+    <!-- Question 24 -->
+    <div class="question-group" data-correct="172.168.1.1 / 255.255.0.0,172.168.0.255 / 255.255.0.0">
+        <h3>Frage: Welche der nachfolgenden IPv4 Adressierungen befinden sich im selben Netzwerk?</h3>
+        <label><input type="checkbox" name="q24" value="200.168.1.3 / 255.255.0.0"> 200.168.1.3 /
+            255.255.0.0</label><br>
+        <label><input type="checkbox" name="q24" value="172.168.0.255 / 255.255.0.0"> 172.168.0.255 /
+            255.255.0.0</label><br>
+        <label><input type="checkbox" name="q24" value="172.169.1.2 / 255.255.0.0"> 172.169.1.2 /
+            255.255.0.0</label><br>
+        <label><input type="checkbox" name="q24" value="172.168.1.1 / 255.255.0.0"> 172.168.1.1 /
+            255.255.0.0</label><br>
+        <label><input type="checkbox" name="q24" value="172.168.99.254 / 255.255.0.0"> 172.168.99.254 /
+            255.255.0.0</label><br>
+        <details>
+            <summary>Antwort</summary>
+            172.168.1.1 / 255.255.0.0, 172.168.0.255 / 255.255.0.0
+        </details>
+    </div>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Question 25 -->
+    <div class="question-group" data-correct="NTFS">
+        <h3>Frage: Welches Dateisystem ermöglicht das Setzen von Zugriffsberechtigungen und Verschlüsselung?</h3>
+        <label><input type="checkbox" name="q25" value="ext4"> ext4</label><br>
+        <label><input type="checkbox" name="q25" value="FAT32"> FAT32</label><br>
+        <label><input type="checkbox" name="q25" value="NTFS"> NTFS</label><br>
+        <label><input type="checkbox" name="q25" value="exFAT"> exFAT</label><br>
+        <details>
+            <summary>Antwort</summary>
+            NTFS
+        </details>
+    </div>
 
-    <h3>Frage: Mit dem Befehl »mv« können Sie unter Linux Systemen Dateien verschieben oder auch umbenennen.</h3>
-    <input type="checkbox"> Wahr<br>
-    <input type="checkbox"> Falsch<br>
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+    <!-- Continue the same wrapping for all remaining questions -->
+    <!-- Use a new question-group div, unique name, checkbox buttons, and data-correct for each -->
+    <script>
+        const questions = document.querySelectorAll('.question-group');
+        questions.forEach(element => {
+            const btn = document.createElement('button');
+            btn.innerText = "Überprüfen";
+            btn.style.marginTop = "1em";
 
-    <h3>Frage: Das Fragezeichen (?) wird verwendet, um null oder mehr Zeichen in einem Dateinamen darzustellen.</h3>
-    <input type="checkbox"> Wahr<br>
-    <input type="checkbox"> Falsch<br>
+            const resultText = document.createElement('span');
+            resultText.style.marginLeft = "1em";
+            resultText.style.lineHeight = "2em";
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+            element.appendChild(btn);
+            btn.insertAdjacentElement('afterend', resultText);
 
-    <h3>Frage: Damit eine Freigabe im Netzwerk nicht ersichtlich ist, muss nach dem Freigabenamen ein $-Zeichen
-        (Dollarzeichen) angegeben werden.</h3>
-    <input type="checkbox"> Wahr<br>
-    <input type="checkbox"> Falsch<br>
+            btn.addEventListener('click', () => {
+                const checkboxes = element.querySelectorAll('input[type="checkbox"]');
+                let selected = [];
+                checkboxes.forEach(box => {
+                    if (box.checked) {
+                        selected.push(box.value);
+                    }
+                });
+                const correctAnswers = element.getAttribute('data-correct').split(',');
+                selected.sort();
+                correctAnswers.sort();
 
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
+                correct = selected.filter(e => correctAnswers.includes(e));
+                wrong = selected.filter(e => !correctAnswers.includes(e));
 
-    <h3>Frage: Welche Portnummer wird für HTTP verwendet? (bitte nur die Zahl eingeben)</h3>
-    <p>http: 80<br>https: 443</p>
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
-
-    <h3>Frage: Welche der folgenden Arten sind KEINE gültigen Partitionierungsstile?</h3>
-    <input type="checkbox"> MBR<br>
-    <input type="checkbox"> EFI<br>
-    <input type="checkbox"> BIOS<br>
-    <input type="checkbox"> GPT<br>
-
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
-
-    <h3>Frage: Mit welcher Dateierweiterung (Dateityp) werden Skriptdateien unter Windows Betriebssystemen
-        abgespeichert?
-    </h3>
-    <input type="checkbox"> .bat<br>
-    <input type="checkbox"> .docx<br>
-    <input type="checkbox"> .sh<br>
-    <input type="checkbox"> .xms<br>
-    <input type="checkbox"> .xls<br>
-
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
-
-    <h3>Frage: Der Punkt (.) kann in Linux verwendet werden, um Folgendes darzustellen:</h3>
-    <input type="checkbox"> Das Verzeichnis über dem aktuellen Arbeitsverzeichnis<br>
-    <input type="checkbox"> Zwei beliebige einzelne Zeichen<br>
-    <input type="checkbox"> Als Referenz auf das aktuelle Verzeichnis, in dem man sich gerade befindet<br>
-    <input type="checkbox"> Nichts; es hat keine besondere Bedeutung<br>
-
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
-
-    <h3>Frage: Welche Aufgaben erfüllt ein Betriebssystem?</h3>
-    <input type="checkbox"> Gerechte Verteilung der Betriebsmittel wie Prozessor oder Arbeitsspeicher<br>
-    <input type="checkbox"> Datenaustausch zwischen verschiedenen Rechnern<br>
-    <input type="checkbox"> Bereitstellung von Diensten<br>
-    <input type="checkbox"> Stellt eine grafische Oberfläche für Benutzer zur Verfügung<br>
-
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
-
-    <h3>Frage: Welche Distributionen sind Ableitungen von Debian?</h3>
-    <input type="checkbox"> Fedora<br>
-    <input type="checkbox"> Linux Mint<br>
-    <input type="checkbox"> Slackware<br>
-    <input type="checkbox"> Ubuntu<br>
-    <input type="checkbox"> Cent OS<br>
-
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
-
-    <h3>Frage: Welche der folgenden Eigenschaften hat ein Mehrbenutzer-Betriebssystem?</h3>
-    <input type="checkbox"> Ein Administrator erhält eine dedizierte CPU (Prozessor) zugewiesen<br>
-    <input type="checkbox"> Viele Benutzer können sich gleichzeitig mit einem eindeutigen Konto anmelden<br>
-    <input type="checkbox"> Jeder Benutzer kann sich nur einmal pro Tag anmelden<br>
-    <input type="checkbox"> Ressourcen werden von Benutzern gemeinsam genutzt<br>
-    <input type="checkbox"> Benutzer können ihre Informationen vor anderen Benutzern schützen<br>
-
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
-
-    <h3>Frage: Der * (Stern) wird unter Linux verwendet, um Folgendes darzustellen:</h3>
-    <input type="checkbox"> steht für genau 1 Zeichen<br>
-    <input type="checkbox"> Nichts; es hat keine besondere Bedeutung<br>
-    <input type="checkbox"> Das Verzeichnis über dem aktuellen Arbeitsverzeichnis<br>
-    <input type="checkbox"> steht für 0 oder mehrere Zeichen<br>
-
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
-
-    <h3>Frage: Welche der nachfolgenden IPv4 Adressierungen befinden sich im selben Netzwerk?</h3>
-    <input type="checkbox"> 200.168.1.3 / 255.255.0.0<br>
-    <input type="checkbox"> 172.168.0.255 / 255.255.0.0<br>
-    <input type="checkbox"> 172.169.1.2 / 255.255.0.0<br>
-    <input type="checkbox"> 172.168.1.1 / 255.255.0.0<br>
-    <input type="checkbox"> 172.168.99.254 / 255.255.0.0<br>
-
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
-
-    <h3>Frage: Welches Dateisystem ermöglicht das Setzen von Zugriffsberechtigungen und Verschlüsselung?</h3>
-    <input type="checkbox"> ext4<br>
-    <input type="checkbox"> FAT32<br>
-    <input type="checkbox"> NTFS<br>
-    <input type="checkbox"> exFAT<br>
-
-    <details>
-        <summary>Antwort</summary>
-        Antwort:
-    </details>
-
+                if (JSON.stringify(selected) === JSON.stringify(correctAnswers)) {
+                    resultText.innerText = "Richtig!";
+                    resultText.style.color = "green";
+                } else {
+                    resultText.innerText = "Falsch! " + correct.length + " correct selected.";
+                    if (wrong.length > 0) {
+                        resultText.innerText += " " + wrong.join(', ') + " incorrect."
+                    }
+                    resultText.style.color = "red";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
