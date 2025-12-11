@@ -1,0 +1,68 @@
+/* Text input styles */
+label {
+    width: 5em;
+    text-align: left;
+    line-height: 2em;
+}
+
+.text-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-input {
+    border-radius: 0.4em;
+    border: none;
+    line-height: 2em;
+    font-family: 'Alexandria';
+    margin-bottom: 2em;
+    flex: 1;
+    margin-left: 1em;
+    background-color: var(--main-font-color);
+}
+
+#input {
+    width: 100%;
+}
+
+#list-input {
+    width: 100%;
+}
+
+/* Settings styles */
+.sep-input {
+    background-color: var(--main-font-color);
+    cursor: pointer;
+}
+
+#settings {
+    margin-bottom: 2em;
+}
+
+/* Button styles */
+button {
+    font-family: 'Alexandria';
+    border-radius: 0.3em;
+    border: none;
+    background-color: var(--main-font-color);
+    filter: drop-shadow(0.15em 0.15em 0.2em);
+    transition: transform .5s;
+    line-height: 2em;
+    margin-left: 2em;
+}
+
+button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#button-div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#res {
+    margin-bottom: 3em;
+}

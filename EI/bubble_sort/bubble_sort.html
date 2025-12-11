@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USTP Carepackage</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="bubble_sort.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="site-title" href="../../index.html">USTP Carepackage</a>
+        <!--<nav>
+            <a href="index.html">1. Semester</a>
+            <a href="index.html">2. Semester</a>
+            <a href="index.html">3. Semester</a>
+            <a href="index.html">4. Semester</a>
+            <a href="index.html">5. Semester</a>
+            <a href="index.html">6. Semester</a>
+        </nav>-->
+    </header>
+
+    <h1>Bubble Sort</h1>
+    <hr>
+    <div id="bin-search">
+        <form id="input">
+            <div class="text-div">
+                <label class="text-label">Liste</label>
+                <input class="text-input" id="list-input" type="text">
+            </div>
+        </form>
+        <form id="settings">
+            <input class="sep-input" type="radio" id="tab" value="t" name="sep">
+            <label>Tab-separiert</label>
+            <input class="sep-input" type="radio" id="comma" value="," name="sep">
+            <label>Komma-separiert</label>
+            <input class="sep-input" type="radio" id="semi" value=";" name="sep">
+            <label>Semicolon-separiert</label>
+        </form>
+        <div id="button-div">
+            <button type="button" id="bin-search-btn" onclick="clearInputs()">Reset</button>
+            <button id="bin-search-btn" onclick="bubbleSort()">Sortieren</button>
+        </div>
+        <div id="res"></div>
+    </div>
+    <script src="bubble_sort.js"></script>
+</body>
+
+</html>
