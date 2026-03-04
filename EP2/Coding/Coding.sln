@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{096621BA-5ABB-440A-BADE-D60242A8B20C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code_Challenges", "Code_Challenges", "{46813AE2-9F39-4C02-88A2-6ED088CE1337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOUtils", "IOUtils\IOUtils.csproj", "{3E2B9093-002E-43F1-8998-87AF9A1C7C96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGame", "GuessingGame\GuessingGame.csproj", "{FDA25C09-977C-44D1-A618-49067E3BDA9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code_Challenge_2_1", "Code_Challenge_2_1\Code_Challenge_2_1.csproj", "{CDE87826-AAB4-4F05-9D7D-EEBA0AFBEC23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E2B9093-002E-43F1-8998-87AF9A1C7C96} = {096621BA-5ABB-440A-BADE-D60242A8B20C}
+		{FDA25C09-977C-44D1-A618-49067E3BDA9A} = {096621BA-5ABB-440A-BADE-D60242A8B20C}
+		{CDE87826-AAB4-4F05-9D7D-EEBA0AFBEC23} = {46813AE2-9F39-4C02-88A2-6ED088CE1337}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E2B9093-002E-43F1-8998-87AF9A1C7C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2B9093-002E-43F1-8998-87AF9A1C7C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2B9093-002E-43F1-8998-87AF9A1C7C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2B9093-002E-43F1-8998-87AF9A1C7C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA25C09-977C-44D1-A618-49067E3BDA9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA25C09-977C-44D1-A618-49067E3BDA9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA25C09-977C-44D1-A618-49067E3BDA9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA25C09-977C-44D1-A618-49067E3BDA9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE87826-AAB4-4F05-9D7D-EEBA0AFBEC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE87826-AAB4-4F05-9D7D-EEBA0AFBEC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE87826-AAB4-4F05-9D7D-EEBA0AFBEC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE87826-AAB4-4F05-9D7D-EEBA0AFBEC23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

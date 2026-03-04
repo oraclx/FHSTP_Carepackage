@@ -1,0 +1,40 @@
+# Rider / IntelliJ
+.idea/
+*.sln.iml
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Build results
+bin/
+obj/
+out/
+
+# Rider caches
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# .NET / NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Test results
+TestResults/
