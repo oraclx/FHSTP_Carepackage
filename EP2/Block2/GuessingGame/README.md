@@ -13,7 +13,8 @@ Das Spiel selbst soll als Funktion implementiert werden, welche nichts zurück g
 Für das Einlesen von werten kann die `ReadInt(...)` aus der vorherigen Übung verwendet werden. Für das Generieren von Zufallszahlen kann die Funktion `Random.Shared.Next(min, max)` verwendet werden.
 
 ### Beispielausgabe
-```Enter minimum number: 0   
+```
+Enter minimum number: 0   
 Enter maximum number: 10  
 Try 1: Guess my number between 0 and 10: 6  
 6 is less than my number!  
@@ -23,4 +24,5 @@ Try 3: Guess my number between 0 and 10: 7
 Your guess was correct! Congratulations, you took 3 tries.  
 Do you want to play again? (y/n): y  
 Enter minimum number:  
-...```
+...
+```
