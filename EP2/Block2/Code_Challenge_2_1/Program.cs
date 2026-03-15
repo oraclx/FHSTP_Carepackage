@@ -2,13 +2,14 @@
 
 Console.OutputEncoding = Encoding.UTF8;
 
+//=============================================================================
+//================================ Test Cases =================================
+//=============================================================================
 Console.WriteLine("Max(int, int, int) -> int".ToUpper());
 var maximum = Max(1, 5, 3);
 Console.WriteLine($"{(maximum == 5 ? "✅" : "❗")}  Max(1, 5, 3) -> {maximum}");  // Gibt 5 aus
-
 maximum = Max(10, 5, 3);
 Console.WriteLine($"{(maximum == 10 ? "✅" : "❗")}  Max(10, 5, 3) -> {maximum}"); // Gibt 10 aus
-
 maximum = Max(1, 5, 33);
 Console.WriteLine($"{(maximum == 33 ? "✅" : "❗")}  Max(1, 5, 33) -> {maximum}"); // Gibt 33 aus
 Console.WriteLine();
@@ -16,10 +17,8 @@ Console.WriteLine();
 Console.WriteLine("Clamp(int, int, int) -> int".ToUpper());
 var clamped = Clamp(25, 10, 20);
 Console.WriteLine($"{(clamped == 20 ? "✅" : "❗")}  Clamp(25, 10, 20) -> {clamped}"); // Gibt 20 aus
-
 clamped = Clamp(15, 10, 20);
 Console.WriteLine($"{(clamped == 15 ? "✅" : "❗")}  Clamp(15, 10, 20) -> {clamped}"); // Gibt 15 aus
-
 clamped = Clamp(5, 10, 20);
 Console.WriteLine($"{(clamped == 10 ? "✅" : "❗")}  Clamp(5, 10, 20) -> {clamped}");  // Gibt 10 aus
 Console.WriteLine();
@@ -50,6 +49,10 @@ Console.WriteLine($"{(f == 1 ? "✅" : "❗")}  FactorialRecursive(1) -> {f}"); 
 f = FactorialRecursive(10);
 Console.WriteLine($"{(f == 3628800 ? "✅" : "❗")}  FactorialRecursive(10) -> {f}"); // Gibt 3628800 aus
 return;
+
+//=============================================================================
+//============================== Implementation ===============================
+//=============================================================================
 
 int Max(int a, int b, int c)
 {

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code_Challenge_2_1", "Code_Challenge_2_1\Code_Challenge_2_1.csproj", "{9998333D-B1F2-4F52-BB9C-4C64C9122946}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Beispiele", "Beispiele", "{779D9ADF-A7B4-4363-ACC7-29356B87E3E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOUtils", "IOUtils\IOUtils.csproj", "{49AD961D-4F1A-45E9-93CF-900F855AC0A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGame", "GuessingGame\GuessingGame.csproj", "{1B926581-69EF-403D-9B58-104C6CF098FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9998333D-B1F2-4F52-BB9C-4C64C9122946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9998333D-B1F2-4F52-BB9C-4C64C9122946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9998333D-B1F2-4F52-BB9C-4C64C9122946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9998333D-B1F2-4F52-BB9C-4C64C9122946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AD961D-4F1A-45E9-93CF-900F855AC0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AD961D-4F1A-45E9-93CF-900F855AC0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AD961D-4F1A-45E9-93CF-900F855AC0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AD961D-4F1A-45E9-93CF-900F855AC0A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B926581-69EF-403D-9B58-104C6CF098FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B926581-69EF-403D-9B58-104C6CF098FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B926581-69EF-403D-9B58-104C6CF098FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B926581-69EF-403D-9B58-104C6CF098FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49AD961D-4F1A-45E9-93CF-900F855AC0A5} = {779D9ADF-A7B4-4363-ACC7-29356B87E3E2}
+		{1B926581-69EF-403D-9B58-104C6CF098FB} = {779D9ADF-A7B4-4363-ACC7-29356B87E3E2}
+	EndGlobalSection
+EndGlobal
