@@ -4,8 +4,8 @@ Schreibe ein `C#`-Programm, das verschiedene Komfortfunktionen für Strings bere
 ---
 Für die Abgabe der korrekt implementierten Funktionen am [eCampus](https://ecampus.ustp.at/mod/assign/view.php?id=768992)
 gibt es maximal **10 Punkte**. Abzugeben ist nur die Datei `Program.cs`!
----
 
+---
 ## Funktionen
 ### `ReverseText`
 Gibt einen Text in umgekehrter Reihenfolge zurück.
@@ -20,6 +20,7 @@ ReverseText("Hello") -> "olleH"
 ReverseText("C#") -> "#C"
 ReverseText("") -> ""
 ```
+
 ---
 ### `IsPalindrome`
 Überprüft, ob ein String ein Palindrom ist (d.h. vorwärts und rückwärts gleich).
@@ -38,6 +39,7 @@ IsPalindrome("Rentner") -> true
 IsPalindrome("Lagerregal") -> true
 IsPalindrome("EP2") -> false
 ```
+
 ---
 ### `SwapCase`
 Gibt einen String zurück, bei dem die Groß- und Kleinbuchstaben vertauscht wurden.
@@ -54,6 +56,7 @@ SwapCase("C# Programming") -> "c# pROGRAMMING"
 SwapCase("12345") -> "12345" (Zahlen bleiben unverändert)
 SwapCase("") -> "" (leerer String bleibt unverändert)
 ```
+
 ---
 ### `CharCount`
 Zählt, wie oft ein bestimmtes Zeichen in einem String vorkommt.
@@ -70,6 +73,7 @@ CharCount("C# Programming", 'm') -> 2
 CharCount("EP2", 'x') -> 0
 CharCount("", 'a') -> 0 (leerer String enthält kein Zeichen)
 ```
+
 ---
 ## Test-Code
 Mit untenstehendem Code-Ausschnitt kann die Funktionalität des Programms auf ihre Korrektheit überprüft werden.

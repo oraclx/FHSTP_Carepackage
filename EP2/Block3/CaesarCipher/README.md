@@ -5,6 +5,7 @@ Die Angabe dient als Referenz zum freiwilligen Üben - **es ist keine Abgabe erf
 ---
 Schreibe ein `C#`-Programm, das Hilfsfunktionen zum Ver- und Entschlüsseln
 von Nachrichten anhand der Cäsar-Verschlüsselung zur Verfügung stellt.
+
 ---
 
 Caesar Cipher
@@ -25,6 +26,7 @@ Verschlüsselt eine Nachricht, indem sie jeden Buchstaben der übergebenen Nachr
 CaesarEncrypt("abc", 1) -> bcd (Versatz um 1)
 CaesarEncrypt("Hallo, EP2!", 3) -> Kdoor, HS2! (Versatz um 3; Ziffern und Sonderzeichen unverändert)
 ```
+
 ---
 ### CaesarDecrypt
 Entschlüsselt eine Nachricht, indem sie jeden Buchstaben des übergebenen Textes um den angegebenen Wert "rückversetzt".
@@ -41,6 +43,7 @@ Zahlen und Sonderzeichen sollen unverändert bleiben.
 CaesarDecrypt("bcd", 1) -> abc (Rückversatz um 1)
 CaesarDecrypt("Kdoor, HS2!", 3) -> Hallo, EP2! (Rückversatz um 3; Ziffern und Sonderzeichen unverändert)
 ```
+
 ---
 ## Test-Code
 Mit untenstehendem Code-Ausschnitt kann die Funktionalität des Programms auf ihre Korrektheit überprüft werden.

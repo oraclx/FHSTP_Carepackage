@@ -6,8 +6,8 @@ Für die Implementierung dürfen keine bestehenden Funktionen der `.NET`-Bibliot
 ---
 Für die Abgabe der korrekt implementierten Funktionen am [eCampus](https://ecampus.ustp.at/mod/assign/view.php?id=768945)
 gibt es maximal **10 Punkte**. Abzugeben ist nur die Datei `Program.cs`!
----
 
+---
 ## Funktionen
 ### `Min`
 Gibt das **Minimum** eines `Int-Arrays` zurück.
@@ -20,6 +20,7 @@ Min(new int[] { 3, 1, 4, 1, 5 }) -> 1
 Min(new int[] { -2, -3, -1 }) -> -3
 Min(new int[] { 42 }) -> 42
 ```
+
 ---
 ### `Max`
 Gibt das **Maximum** eines `Int-Arrays` zurück.
@@ -32,6 +33,7 @@ Max([ 3, 1, 4, 1, 5 ]) -> 5
 Max([ -2, -3, -1 ]) -> -1
 Max([ 42 ]) -> 42
 ```
+
 ---
 ### `Sum`
 Gibt die **Summe** aller Elemente eines `Int-Arrays` zurück.
@@ -44,6 +46,7 @@ Sum([ 3, 1, 4, 1, 5 ]) -> 14
 Sum([ -2, -3, -1 ]) -> -6
 Sum([ 42 ]) -> 42
 ```
+
 ---
 ### `Avg`
 Gibt den **Durchschnittswert** aller Elemente eines `Int-Arrays` zurück.
@@ -57,6 +60,7 @@ Avg([3, 1, 4, 1, 5]) -> 2
 Avg([-2, -3, -1]) -> -2
 Avg([42]) -> 42
 ```
+
 ---
 ## Test-Code
 Mit untenstehendem Code-Ausschnitt kann die Funktionalität des Programms auf ihre Korrektheit überprüft werden.
