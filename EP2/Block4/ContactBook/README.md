@@ -30,7 +30,7 @@ Die `ContactBook` Klasse besitzt folgende zwei Properties:
 Ein Konstruktor ist nicht nötig.
 
 Weiters besitzt die Klasse folgende Methoden:
-``` c#
+```c#
 // Fügt die übergebene Person zu _contacts hinzu
 public void Add(Person person) { /* ... */ }
 
@@ -52,11 +52,13 @@ public void PrintToConsole() { /* ... */ }
 ### Hilfestellung
 Für das Überschreiben der `ToString()` wird folgende Methodensignatur benötigt:
 
-`public override string ToString()`
+```c#
+public override string ToString()
+```
 
 ---
 ### Beispielausgabe
-``` c#
+```c#
 var contacts = new ContactBook();
 contacts.Add(new Person("Charlie", "Grill", "24.06.1994"));
 
