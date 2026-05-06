@@ -31,17 +31,17 @@ public class BankAccount
 
     public void PrintTransactions()
     {
+        // Console.WriteLine($"Account - {AccountHolder}");
+        // Console.WriteLine($"Balance: € {Balance}");
+        // Console.WriteLine("Transactions:");
         var statement = $"Account - {AccountHolder}\n";
         statement += $"Balance: € {Balance}\n";
         statement += "Transactions:\n";
-        //Console.WriteLine($"Account - {AccountHolder}");
-        //Console.WriteLine($"Balance: € {Balance}");
-        //Console.WriteLine("Transactions:");
         for (var i = 0; i < _transactions.Count; i++)
         {
             var sign = (_transactions[i] >= 0) ? "+" : "-";
+            // Console.WriteLine($"{i}. {sign} € {_transactions[i]}");
             statement += $"{i + 1}. {sign} € {_transactions[i]}\n";
-            //Console.WriteLine($"{i}. {sign} € {_transactions[i]}");
         }
         Console.WriteLine(statement);
     }
