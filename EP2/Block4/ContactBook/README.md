@@ -3,7 +3,7 @@ Dieses Beispiel wurde im **Video 5** behandelt.
 Die Angabe dient als Referenz zum freiwilligen Üben - **es ist keine Abgabe erforderlich!**
 
 ---
-Schreibe ein C#-Programm, das ein Kontaktbuch implementiert.
+Schreibe ein `C#`-Programm, das ein Kontaktbuch implementiert.
 Dazu sind zwei Klassen zu schreiben: `Person` und `ContactBook`.
 
 ---
