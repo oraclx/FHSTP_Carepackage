@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Block5", "Block5\Block5.csproj", "{ED8EAA63-E096-43CC-9CBA-4209576BBDFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code_Challenge_5_1", "Code_Challenge_5_1\Code_Challenge_5_1.csproj", "{8207E44F-1C82-43EB-8B18-12D36C1040D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ED8EAA63-E096-43CC-9CBA-4209576BBDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED8EAA63-E096-43CC-9CBA-4209576BBDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED8EAA63-E096-43CC-9CBA-4209576BBDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED8EAA63-E096-43CC-9CBA-4209576BBDFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8207E44F-1C82-43EB-8B18-12D36C1040D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8207E44F-1C82-43EB-8B18-12D36C1040D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8207E44F-1C82-43EB-8B18-12D36C1040D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8207E44F-1C82-43EB-8B18-12D36C1040D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
