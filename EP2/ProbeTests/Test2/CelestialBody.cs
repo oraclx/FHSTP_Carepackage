@@ -11,6 +11,11 @@
         Mass = mass;
         Diameter = diameter;
     }
-    
-    public abstract void PrintInfo();
+
+    protected abstract string GetSummary();
+
+    public void PrintInfo()
+    {
+        Console.WriteLine(GetSummary());
+    }
 }

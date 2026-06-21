@@ -4,9 +4,12 @@
     public bool HasRings { get; }
     public bool IsGasGiant { get; }
     public int NumberOfMoons { get; }
-    private readonly List<CelestialBody> _neighbors;
+    public bool HasNeighbor => _neighbors.Count > 0;
     
-    public Planet(string name, double mass, double diameter, double orbitalPeriod, bool hasRings, bool isGasGiant, int numberOfMoons) 
+    private readonly List<CelestialBody> _neighbors;
+
+    public Planet(string name, double mass, double diameter, double orbitalPeriod, bool hasRings, bool isGasGiant,
+        int numberOfMoons)
         : base(name, mass, diameter)
     {
         OrbitalPeriod = orbitalPeriod;
@@ -16,28 +19,54 @@
         _neighbors = new List<CelestialBody>();
     }
 
-    public override void PrintInfo()
+    protected override string GetSummary()
     {
-        Console.WriteLine($"Beschreibung des Planeten {Name}:");
-        Console.WriteLine($"\t- Masse: {Mass} kg");
-        Console.WriteLine($"\t- Durchmesser: {Diameter} m");
-        Console.WriteLine($"\t- Dichte: {Density} kg/m³");
-        Console.WriteLine($"\t- Umlaufzeit: {OrbitalPeriod} Tage");
-        Console.WriteLine($"\t- Hat Ringe: {(HasRings ? "Ja" : "Nein")}");
-        Console.WriteLine($"\t- Ist Gasriese: {(IsGasGiant ? "Ja" : "Nein")}");
-        Console.WriteLine($"\t- Anzahl der Monde: {NumberOfMoons}");
-
-        Console.WriteLine("\tBenachbarte Himmelskörper:");
-        if (_neighbors.Count == 0)
+        var res = $"Beschreibung des Planeten {Name}:\n" +
+                  $"\t- Masse: {Mass} kg\n" +
+                  $"\t- Durchmesser: {Diameter} m\n" +
+                  $"\t- Dichte: {Density} kg/m³\n" +
+                  $"\t- Umlaufzeit: {OrbitalPeriod} Tage\n" +
+                  $"\t- Hat Ringe: {(HasRings ? "Ja" : "Nein")}\n" +
+                  $"\t- Ist Gasriese: {(IsGasGiant ? "Ja" : "Nein")}\n" +
+                  $"\t- Anzahl der Monde: {NumberOfMoons}\n" +
+                  "\tBenachbarte Himmelskörper:\n";
+        
+        if (!HasNeighbor)
         {
-            Console.WriteLine("\t\tKeine Nachbarplaneten vorhanden.");
-            return;
+            res += "\t\tKeine Nachbarplaneten vorhanden.";
         }
 
         foreach (var n in _neighbors)
         {
-            Console.WriteLine($"\t\t- {n.Name}");
+            res += $"\t\t- {n.Name}\n";
         }
-        
+
+        return res;
+    }
+    
+    public bool AddNeighbor(CelestialBody neighbor)
+    {
+        if (_neighbors.Contains(neighbor) || neighbor == this)
+        {
+            return false;
+        }
+
+        _neighbors.Add(neighbor);
+        return true;
+    }
+    
+    public bool RemoveNeighbor(CelestialBody neighbor)
+    {
+        return _neighbors.Remove(neighbor);
+    }
+    
+    public bool IsNeighbor(CelestialBody neighbor)
+    {
+        return _neighbors.Contains(neighbor);
+    }
+    
+    public List<CelestialBody> GetNeighbors()
+    {
+        return _neighbors;
     }
 }
